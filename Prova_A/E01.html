@@ -8,11 +8,18 @@
     //AQUI, USE FOR...OF!
 
     //Entrada
-
-
+    let lista = [4, 5, 2, 3];
+    let multiplicacao = 0;
+    let contador = 1;
+    let resultado = 0;
     //Processamento
-
+    for(numero of lista){
+        contador++;
+    multiplicacao = numero * lista[lista.length - contador];
+    resultado += multiplicacao;
+    
+    }
 
     //Saída
-
+    document.write(resultado);
 </script>

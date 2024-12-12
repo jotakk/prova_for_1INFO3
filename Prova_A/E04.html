@@ -7,11 +7,15 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
-
+    const n = Number(prompt(`Informe um número N:`));
+    let divisores = []
     //Processamento
-
+    for(contador = 1; contador <= n; contador++){
+        if(n % contador == 0){
+            divisores.push(contador);
+        }
+    }
 
     //Saída
-
+    alert(`Os divisores de ${n} são: ${divisores.join(`, `)}.`);
 </script>

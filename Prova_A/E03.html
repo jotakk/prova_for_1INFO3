@@ -6,11 +6,12 @@
     //AQUI, USE FOR COM VARIÁVEL DE CONTROLE!!!
 
     //Entrada
-
-
+    const n = Number(prompt(`Informe um número N:`));
+    let numeros = [];
     //Processamento
-
-
+    for(contador = 1; contador <= n; contador++){
+        numeros.push(contador);
+    }
     //Saída
-
+    document.write(`Número de 1 até ${n}:</br>${numeros.join(`</br>`)}`);
 </script>

@@ -7,11 +7,13 @@
     //AQUI, USE FOR...OF!
 
     //Entrada
-
-
+    let lista = [1, 2, 3, 4, 5, 1, 4, 7, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+    
     //Processamento
-
-
+    for(numero of lista){
+    lista.sort((a, b) => a - b);
+    }
+    const maior = lista[lista.length - 1];
     //Saída
-
+    document.write(`O maior numero da lista será: ${maior}.`);
 </script>
